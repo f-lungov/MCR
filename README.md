@@ -14,7 +14,7 @@ __*.R__ - R files that will run the model. They are well commented and can be us
 
 1. Download all the contents from the repo. If you don't intend to use the demo use case, you don't need to download the folder gdp and its contents. If you want to use the demo but you do not want to use the regressions in the demo (i.e. you want to start running it from scratch), don't download the regressions folder inside the gdp folder.
 
-2. If you are using your own use case, you need to create a folder with an Excel file called raw-data.xlsx containing your data. The first row should have the variable names; the first column should have your dependent variable; other columns should have you independent variables. Any column placed after a blank column will be ignored.
+2. If you are using your own use case, you need to create a folder with an Excel file called raw-data.xlsx containing your data. There must be a tab called `tidyup data`. The first row should have the variable names; the first column should have the observation names; the second column should have your dependent variable; the other columns should have you independent variables. Any column placed after a blank column will be ignored.
 
 3. In R, the first thing you need to do is to `source("ini.R")`. Make sure you are in the MCR directory.
 
