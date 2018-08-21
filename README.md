@@ -10,7 +10,7 @@ This document provides basic information on how to start running the model. It i
 
 __*.R__ - R files that will run the model. They are well commented and can be used for help.
 
-# HOW TO RUN THE MODEL
+# HOW TO GET STARTED RUNNING THE MODEL
 
 1. Download all the contents from the repo. If you don't intend to use the demo use case, you don't need to download the folder gdp and its contents. If you want to use the demo but you do not want to use the regressions in the demo (i.e. you want to start running it from scratch), don't download the regressions folder inside the gdp folder.
 
@@ -23,3 +23,9 @@ __*.R__ - R files that will run the model. They are well commented and can be us
 5. You are now ready to start your run with `x <- runMCR("use-case")`. "use-case" will be "gdp" if you are using the demo. If you are not, it is the name of the folder you created in step 2. If you want to change any other setting in the simulation, refer to runMCR.R for help.
 
 6. The model should be running now and once done (with the suggested settings, it should not take long) it will place the results in the x variable declared in step 5.
+
+# FUNCTIONS THAT CAN BE CALLED AFTER ini() IS RUN
+
+**runMCR** - Runs the model.
+
+**fetchHistory** - Fetches the top equations found so far.
