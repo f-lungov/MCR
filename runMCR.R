@@ -15,6 +15,7 @@ runMCR <- function(useCase, histFile="default", lenHist=NA, maxRegs=1000, maxTim
 	
 	stTime <- Sys.time()
       
+	# fix: check if there is folder regressions; if there isn't, create it
 	histFile <- paste(useCase, '/regressions/', histFile, '.RData', sep='')
 	
 	# if history file exists, it is loaded and its data dumped into variables
